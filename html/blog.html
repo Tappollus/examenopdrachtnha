@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>HJ - Blog</title>
+</head>
+
+<body>
+
+    <header>
+
+        <section class="title-bar">
+            <h1>Muziekschool H&J</h1>
+            <p>Blog</p>
+        </section>
+
+        <section class="menu-bar">
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="tarieven.html">Tarieven</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Agenda.html">Agenda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </section>
+
+    </header>
+
+    <section class="container">
+        <section class="side">
+            <h2>HJ blog!</h2>
+            <p>Wij houden ons veel bezig met muziek en willen graag onze opgedane kennis met jullie delen. In onze blog
+                vind je tip en tricks voor het onderhouden van je instrument, het laatste nieuws over onze muzikale
+                helden en nog veel meer!</p>
+            <button id="blogFormBtn">Blog maken</button>
+        </section>
+
+        <section id="main" class="main">
+            <div id="blog">
+                <div id="blog1">
+                    <div id="postblog1" class="truncate"></div>
+                    <span class="readbtn"></span>
+                </div>
+    
+                <div id="blog2">
+                    <div id="postblog2" class="truncate"></div>                
+                    <span class="readbtn"></span>
+                </div>
+    
+                <div id="blog3">
+                    <div id="postblog3" class="truncate"></div>
+                    <span class="readbtn"></span>
+                </div>
+            </div>
+
+            <div id="form">
+                <form id="blogform">
+                    <h2>Nieuwe blog maken</h2>
+                    <label for="titel"><strong>Titel</strong></label>
+                    <input type="text" id="titel" name="titel">
+                
+                    <label for="auteur"><strong>Auteur</strong></label>
+                    <input type="text" id="auteur" name="auteur">
+                
+                    <label for="postdatum"><strong>Postdatum</strong></label>
+                    <input type="datetime" id="postdatum" name="postdatum">
+                
+                    <label for="blog"><strong>Blog</strong></label>
+                    <textarea name="blog" id="blog" cols="30" rows="100"></textarea>
+                
+                    <input type="submit" value="Valideer" id="submit">                
+                </form>
+            </div>
+
+        </section>
+    </section>
+
+
+    <footer>
+        <p>© Copyright 2023 Muziekschool H&J <br> (Dit is een oefenopdracht, alle informatie op deze website is
+            fictief.)
+        </p>
+    </footer>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/validation/dist/jquery.validate.js"></script>
+    <script src="../js/validation/dist/additional-methods.js"></script>
+    <script src="../js/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+    <script src="../js/blog.js"></script>
+</body>
+
+</html>
