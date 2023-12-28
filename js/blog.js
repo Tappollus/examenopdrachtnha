@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $.ajax({
-        url: '/js/data.html',
+        url: '/html/data.html',
         success: postBlogs(),
         error: function (jqXhr, textStatus, errorThrown) {
             alert('FOUT: ' + textStatus + errorThrown);
@@ -38,7 +38,7 @@ function postBlogs(data) {
 
         blogArchive[blogDiv] = blogs[i];
 
-        let postblog = '/js/data.html ' + blogs[i].toString();
+        let postblog = '/html/data.html ' + blogs[i].toString();
 
         $(blogDiv).load(postblog, function () {
             $('.truncate').each(function () {
@@ -63,9 +63,9 @@ function postBlogs(data) {
 function getSelectedBlog(selectedBlog, blog) {
 
     $.ajax({
-        url: '/js/data.html',
+        url: '/html/data.html',
         success: function (data) {
-            $(selectedBlog).load('/js/data.html ' + blog);
+            $(selectedBlog).load('/html/data.html ' + blog);
         },
         error: function (jqXhr, textStatus, errorThrown) {
             alert('FOUT: ' + textStatus + errorThrown);
